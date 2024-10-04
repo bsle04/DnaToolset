@@ -16,3 +16,8 @@ def validateSequence(dna_seq):
 def countNucleotides(dna_seq):
     ACGTcount = [dna_seq.count("A"), dna_seq.count("C"), dna_seq.count("G"), dna_seq.count("T")]
     return ACGTcount
+
+#Transcribes DNA to RNA
+def transcribe(seq):
+    return seq.replace("T", "U")
+

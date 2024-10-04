@@ -3,8 +3,8 @@ from dnatoolkit import *
 
 DNA = open("C:/Users/Brandon/Downloads/rosalind_dna.txt").read()
 
-if validateSequence(DNA):
-    ACGTcount = countNucleotides(DNA)
+print(f'\nSequence: {DNA}\n')
+print(f'[1] + Sequence Length: {len(DNA)}\n')
+print(f'[2] + Nucleotide Frequency: {countNucleotides(DNA)}\n')
 
-for i in ACGTcount:
-    print(i)
+print(f'[3] + DNA/RNA Transcription: {transcribe(DNA)}\n')
